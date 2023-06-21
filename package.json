@@ -1,0 +1,16 @@
+{
+  "name": "study_typescript",
+  "version": "1.0.0",
+  "description": "study",
+  "main": "index.ts",
+  "scripts": {
+    "tsc": ".\\node_modules\\.bin\\tsc",
+    "build": "tsc --build",
+    "run": "node dist\\main.js"
+  },
+  "author": "aohno",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.1.3"
+  }
+}
