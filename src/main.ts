@@ -7,6 +7,7 @@ import {GameInfo, Genre} from "./types/GameInfo"
 function hello(name: string): void {
     console.log("Hello " + name + "!");
 }
+
 let your_name: string = "Akihiro Ohno";
 hello(your_name);
 
@@ -37,18 +38,22 @@ const gameInfo: GameInfo = JSON.parse(jsonText)
 
 gameInfo.games.forEach(game => {
     console.log("#" + game.title)
-    if(game.note){
+    if (game.note) {
         console.log("##" + game.note);
     }
     game.genres.forEach(genre => {
-        switch(genre){
-            case Genre.ACT: console.log("- アクション");
-            break;
-            case Genre.RPG: console.log("- RPG");
-            break;
-            case Genre.STG: console.log("- シューティング");
-            break;
-            default: console.error("- fuck you " + genre);
+        switch (genre) {
+            case Genre.ACT:
+                console.log("- アクション");
+                break;
+            case Genre.RPG:
+                console.log("- RPG");
+                break;
+            case Genre.STG:
+                console.log("- シューティング");
+                break;
+            default:
+                console.error("- fuck you " + genre);
         }
     })
 })

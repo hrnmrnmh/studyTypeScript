@@ -6,6 +6,12 @@ export type GameInfo = {
     games: Game[]
 }
 
+type Game = {
+    title: string
+    genres: Genre[]
+    note?: string
+}
+
 export const Genre = {
     ACT: "ACT",
     RPG: "RPG",
@@ -13,9 +19,3 @@ export const Genre = {
 } as const;
 
 type Genre = typeof Genre[keyof typeof Genre];
-
-type Game = {
-    title: string
-    genres: Genre[]
-    note?: string
-}

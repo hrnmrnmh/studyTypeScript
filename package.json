@@ -4,9 +4,9 @@
   "description": "study",
   "main": "index.ts",
   "scripts": {
-    "tsc": ".\\node_modules\\.bin\\tsc",
+    "tsc": "./node_modules/.bin/tsc",
     "build": "tsc --build",
-    "run": "node dist\\main.js"
+    "main": "node dist/main.js"
   },
   "author": "aohno",
   "license": "ISC",
