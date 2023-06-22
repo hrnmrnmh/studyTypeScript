@@ -1,8 +1,9 @@
 import {GameInfo, Genre} from "./types/GameInfo"
 
 /**
+ * print greeting message to console
  * @see <a href="https://www.tohoho-web.com/ex/typescript.html">とほほのTypeScript入門</a>
- * @param name: string as fullName
+ * @param name: string as fullName NOT NULL
  */
 function hello(name: string): void {
     console.log("Hello " + name + "!");
@@ -53,7 +54,7 @@ gameInfo.games.forEach(game => {
                 console.log("- シューティング");
                 break;
             default:
-                console.error("- fuck you " + genre);
+                console.error("- そもそもここに入らないようにしたくない・・・? " + genre);
         }
     })
 })
