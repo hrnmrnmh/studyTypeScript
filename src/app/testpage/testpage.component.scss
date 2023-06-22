@@ -1,0 +1,22 @@
+.game-info {
+  display: flex;
+  justify-content: center;
+
+  .game {
+    border-color: #1976d2;
+    border-style: solid;
+    margin: 20px;
+    width: 600px;
+
+    .game-title {
+      background-color: #1976d2;
+      color: white;
+      margin-top: 0;
+      padding: 7px;
+    }
+
+    .note {
+      margin: 7px;
+    }
+  }
+}

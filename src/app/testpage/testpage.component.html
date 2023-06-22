@@ -1,9 +1,13 @@
 <p>testpage works!</p>
 
-<div *ngFor="let game of gameInfo.games">
-  <h3 class="gameTitle">{{game.title}}</h3>
-  <p *ngIf="game.note">{{game.note}}</p>
-  <ul>
-    <li *ngFor="let genre of game.genres">{{genre}}</li>
-  </ul>
+<div class="game-info">
+    <div>
+        <div *ngFor="let game of gameInfo.games" class="game">
+            <h3 class="game-title">{{game.title}}</h3>
+            <p *ngIf="game.note" class="note">{{game.note}}</p>
+            <ul>
+                <li *ngFor="let genre of game.genres">{{genre}}</li>
+            </ul>
+        </div>
+    </div>
 </div>
