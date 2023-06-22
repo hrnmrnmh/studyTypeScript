@@ -3,13 +3,13 @@ import {BrowserModule} from '@angular/platform-browser';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {TestpageComponent} from './testpage/testpage.component';
+import {GameComponent} from './testpage/game.component';
 import {TopPageComponent} from './top-page/top-page.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        TestpageComponent,
+        GameComponent,
         TopPageComponent
     ],
     imports: [
