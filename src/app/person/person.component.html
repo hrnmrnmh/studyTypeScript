@@ -1,0 +1,9 @@
+<div *ngIf="persons$ | async as persons" class="persons">
+    <div>
+        <div *ngFor="let person of persons.data; index as i" class="person">
+            <h3 class="name">{{person?.name}}</h3>
+            <p class="age">{{person.age}} 歳</p>
+            <p class="note">{{person.note}}</p>
+        </div>
+    </div>
+</div>
