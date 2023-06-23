@@ -9,8 +9,9 @@ import {Persons} from "../../types/Persons";
 })
 export class PersonComponent {
     persons: Promise<Persons>
+    protected readonly encodeURIComponent = encodeURIComponent;
 
-    constructor(personService: PersonService) {
+    constructor(private personService: PersonService) {
         this.persons = personService.fetch();
     }
 }
