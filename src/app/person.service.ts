@@ -12,7 +12,7 @@ export class PersonService {
     /**
      * @see <a href="https://www.umayadia.com/Note/Note028WebAPISample.htm#A5_3">すぐ呼び出し可能なWebAPIのサンプル #GET persons</a>
      */
-    async get() {
+    async fetch(): Promise<Persons> {
         try {
             const response = await axios.get("https://umayadia-apisample.azurewebsites.net/api/persons")
             return response.data as Persons;

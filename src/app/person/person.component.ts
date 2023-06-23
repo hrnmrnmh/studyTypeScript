@@ -8,9 +8,9 @@ import {Persons} from "../../types/Persons";
   styleUrls: ['./person.component.scss']
 })
 export class PersonComponent {
-  persons$: Promise<Persons>
+  persons: Promise<Persons>
 
   constructor(personService: PersonService) {
-    this.persons$ = personService.get();
+    this.persons = personService.fetch();
   }
 }
