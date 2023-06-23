@@ -23,10 +23,10 @@ const jsonText = `{
 const gameInfo: GameInfo = JSON.parse(jsonText);
 
 @Component({
-  selector: 'app-game',
-  templateUrl: './game.component.html',
-  styleUrls: ['./game.component.scss']
+    selector: 'app-game',
+    templateUrl: './game.component.html',
+    styleUrls: ['./game.component.scss']
 })
 export class GameComponent {
-  gameInfo: GameInfo = gameInfo
+    gameInfo: GameInfo = gameInfo
 }
