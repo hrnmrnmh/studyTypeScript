@@ -4,10 +4,15 @@
  */
 export type Persons = {
     success: boolean
-    data: Person[]
+    data: PersonData[]
 }
 
-type Person = {
+export type Person = {
+    success: boolean
+    data: PersonData
+}
+
+type PersonData = {
     name: string
     note: string
     age: number

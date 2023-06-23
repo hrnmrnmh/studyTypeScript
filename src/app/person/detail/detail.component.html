@@ -1,0 +1,11 @@
+<div id="persons">
+    <div>
+        <div *ngIf="(person | async)?.data as data; else not_found" class="person">
+            <h3 class="name">{{data.name}}</h3>
+            <p class="age">{{data.age}} 歳</p>
+            <p class="note">{{data.note}}</p>
+        </div>
+    </div>
+</div>
+
+<ng-template #not_found>not found</ng-template>
