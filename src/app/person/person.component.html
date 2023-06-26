@@ -1,7 +1,7 @@
 <div id="persons">
     <div>
         <div *ngFor="let person of (persons | async)?.data" class="person">
-            <a href="/person/{{encodeURIComponent(person.name)}}">
+            <a [routerLink]="['/person', person.name]">
                 <h3 class="name">{{person.name}}</h3>
             </a>
             <p class="age">{{person.age}} 歳</p>
